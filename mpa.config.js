@@ -29,7 +29,7 @@ const setMpa = () => {
   const htmlWebpackPlugins = [];
 
   const entryFiles = glob.sync(path.join(__dirname, "./src/*/index.js"));
-
+  console.log('entry -=>', entryFiles)
   entryFiles.map((item, index) => {
     const entryFile = entryFiles[index];
     const match = entryFile.match(/src\/(.*)\/index\.js$/);
